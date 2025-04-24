@@ -77,9 +77,8 @@ if __name__ == "__main__":
         email=os.getenv("JIRA_EMAIL"),
         api_token=os.getenv("VINIT_API_TOKEN"),
     )
-    jira.get_assigneable_users_for_issue
-#    user_id = jira.fetch_user_id()  
-#    jira.assign_issue(account_id=user_id,issue_key="SP-2")
+    user_id = jira.fetch_user_id()  
+    jira.assign_issue(account_id=user_id,issue_key="SP-2")
 
      
     
